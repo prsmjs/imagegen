@@ -97,6 +97,10 @@ const images = await generateImage("openai/gpt-image-1", "a paper airplane", { n
 images.forEach((img, i) => writeFileSync(`plane-${i}.png`, Buffer.from(img.data, "base64")));
 ```
 
+## Guide
+
+See [`docs/image-generation.md`](./docs/image-generation.md) for the full option reference, per-provider details, raw passthrough, and multi-image generation.
+
 ## License
 
 ISC
