@@ -1,0 +1,35 @@
+{
+  "name": "@prsm/image",
+  "version": "1.0.0",
+  "description": "Image generation across OpenAI, xAI, and Google with normalized options and raw provider passthrough",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "test": "vitest --reporter=verbose --run",
+    "test:watch": "vitest",
+    "test:live": "IMAGE_LIVE=1 vitest --reporter=verbose --run",
+    "types": "tsc --declaration --allowJs --emitDeclarationOnly --skipLibCheck --target es2020 --module nodenext --moduleResolution nodenext --strict false --esModuleInterop true --outDir ./types src/index.js",
+    "prepublishOnly": "npm run types"
+  },
+  "author": "nvms",
+  "license": "ISC",
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
