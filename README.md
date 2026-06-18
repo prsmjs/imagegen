@@ -1,12 +1,12 @@
 <p align="center">
-  <img src=".github/logo.svg" width="80" height="80" alt="@prsm/image logo">
+  <img src=".github/logo.svg" width="80" height="80" alt="@prsm/imagegen logo">
 </p>
 
-<h1 align="center">@prsm/image</h1>
+<h1 align="center">@prsm/imagegen</h1>
 
 <p align="center">
-  <a href="https://github.com/prsmjs/image/actions/workflows/test.yml"><img src="https://github.com/prsmjs/image/actions/workflows/test.yml/badge.svg" alt="test"></a>
-  <a href="https://www.npmjs.com/package/@prsm/image"><img src="https://img.shields.io/npm/v/@prsm/image.svg" alt="npm"></a>
+  <a href="https://github.com/prsmjs/imagegen/actions/workflows/test.yml"><img src="https://github.com/prsmjs/imagegen/actions/workflows/test.yml/badge.svg" alt="test"></a>
+  <a href="https://www.npmjs.com/package/@prsm/imagegen"><img src="https://img.shields.io/npm/v/@prsm/imagegen.svg" alt="npm"></a>
 </p>
 
 Image generation across OpenAI, xAI, and Google behind one function.
@@ -16,7 +16,7 @@ Image APIs differ a lot between providers, and a parameter that exists for one o
 ## Installation
 
 ```bash
-npm install @prsm/image
+npm install @prsm/imagegen
 ```
 
 Node 24 or newer.
@@ -24,7 +24,7 @@ Node 24 or newer.
 ## Usage
 
 ```js
-import { generateImage, setKeys } from "@prsm/image";
+import { generateImage, setKeys } from "@prsm/imagegen";
 import { writeFileSync } from "fs";
 
 setKeys({ openai: process.env.OPENAI_API_KEY });

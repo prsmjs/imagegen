@@ -1,5 +1,5 @@
 {
-  "name": "@prsm/image",
+  "name": "@prsm/imagegen",
   "version": "1.0.0",
   "description": "Image generation across OpenAI, xAI, and Google with normalized options and raw provider passthrough",
   "type": "module",

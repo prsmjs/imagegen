@@ -1,4 +1,4 @@
-import { generateImage, setKeys } from "@prsm/image";
+import { generateImage, setKeys } from "@prsm/imagegen";
 import { writeFileSync } from "fs";
 
 setKeys({
